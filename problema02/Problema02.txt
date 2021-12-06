@@ -1,0 +1,96 @@
+-----Algoritmo------
+
+1. Inicio 
+2. Se ingresa el precio unitario del producto
+3. Se ingresa la cantidad que desea de este producto
+4. Multiplicamos el precio por la cantidad obteniendo el costo parcial
+
+5. Si la cantidad del producto es menor a 0, daremos un mensaje de error diciendo 
+   "Valor fuera de rango"
+
+6. Si la cantidad del producto es igual a 1, aplicaremos el descuento 1, es decir
+   al costo parcial lo multiplicamos por 20 y lo dividimos para 100, despues
+   al costo final lo obtendremos restando el costo parcial menos el descuento 1
+
+7. Si la cantidad del producto es igual a 2, aplicaremos el descuento 2, es decir
+   al costo parcial lo multiplicamos por 25 y lo dividimos para 100, despues
+   al costo final lo obtendremos restando el costo parcial menos el descuento 2
+
+8. Si la cantidad del producto es igual a 3, aplicaremos el descuento 3, es decir
+   al costo parcial lo multiplicamos por 40 y lo dividimos para 100, despues
+   al costo final lo obtendremos restando el costo parcial menos el descuento 3
+
+9. Si la cantidad del producto es mayor a 3, aplicaremos el descuento 4, es decir
+   al costo parcial lo multiplicamos por 40 y lo dividimos para 100, despues
+   al costo final lo obtendremos restando el costo parcial menos el descuento 4
+
+10. Se muestra en pantalla "Costo final de venta" y la variable de costo final 
+11. Fin 
+
+
+
+-----Miniespecificacion---
+
+1. Inicio
+// declaro las variables
+
+2. precio, d[0,n]
+3. cantidad, i[0,n]
+4. costoparcial, d[0,n]
+5. porcentaje1, d[0,n] <--20
+6. porcentaje2, d[0,n] <--25
+7. porcentaje3, d[0,n] <--40
+8. porcentaje4, d[0,n] <--50
+9. descuento1, d[0,n]
+10. descuento2, d[0,n]
+11. descuento3, d[0,n]
+12. descuento4, d[0,n]
+13. costofinal, d[0,n] <--0
+
+//pido datos por teclado
+
+14. Escribir "Ingrese el precio unitario del producto"
+15. Lea precio
+16. Escribir "Ingrese la cantidad que desea de este producto"
+17. Lea cantidad
+
+//proceso
+
+18. costoparcial <-- precio * cantidad
+19. descuento1 <-- (costoparcial * porcentaje1) / 100
+20. descuento2 <-- (costoparcial * porcentaje2) / 100
+21. descuento3 <-- (costoparcial * porcentaje3) / 100
+22. descuento4 <--(costoparcial * porcentaje4) / 100
+
+23. Escribir "Venta de Trajes" + \n + "Cantidad de productos" + cantidad + \n 
+    + "Costo de los productos" + precio + \n + "Subtotal" + costoparcial
+
+24. Si cantidad < 0 entonces
+25. 	Escribir "Valor fuera de rango"
+
+26. De lo contrario si (cantidad = 1) entonces
+27.	costofinal <-- costoparcial - descuento1
+28. 	Escribir "Descuento:" + descuento1
+
+29. De lo contrario si (cantidad = 2) entonces
+30.	costofinal <-- costoparcial - descuento2
+31. 	Escribir "Descuento:" + descuento2
+
+32. De lo contrario si (cantidad = 3) entonces
+33.	costofinal <-- costoparcial - descuento3
+34. 	Escribir "Descuento:" + descuento3
+
+35. De lo contrario si (cantidad > 3) entonces
+36.	costofinal <-- costoparcial - descuento4
+37. 	Escribir "Descuento:" + descuento4
+
+38. Fin si
+39. Fin si
+40. Fin si
+41. Fin si
+42. Fin si
+
+// salida
+43. Escribir "Costo final de venta: " + costofinal
+44. Fin 
+

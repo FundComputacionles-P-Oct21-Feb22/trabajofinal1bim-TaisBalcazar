@@ -1,0 +1,37 @@
+-----Miniespecificacion-----
+
+1.Inicio
+
+// declaro variables
+
+2. pulgadas, d[0,n] 
+3. metro, i[0,n]
+4. contador, i[0,n]
+5. suma, d[0,n]
+6. cadena0, x(100)[{a-z}] <-- "Metros | Yardas| Pulgada| Pies"
+7. cadena1, d[0,n]
+8. cadena2, d[0,n]
+9. cadena3, d[0,n]
+10.cadena4, d[0,n]
+
+// proceso
+
+11. Escribir "Ingrese el valor en metros que desea convertir"
+12. Lea metro
+13. Escribir cadena0
+13. Mientras (contador < metro)
+14.	contador <-- contador + 1
+15.	suma <-- contador
+16.	yardas <-- suma * 1.094
+17.	pulgadas <-- suma * 39.37
+18.	pies <-- suma * 3.2804
+19.	cadena1 <-- suma
+20.	cadena2 <-- yardas
+21.	cadena3 <-- pulgadas
+22.	cadena4 <-- pies
+24. Fin Mientras
+
+// salida
+
+25. Escribir cadena1 + cadena2 + cadena3 + cadena4
+26. Fin

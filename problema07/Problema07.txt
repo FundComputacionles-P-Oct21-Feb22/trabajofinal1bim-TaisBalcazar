@@ -1,0 +1,31 @@
+------Miniespecificacion------
+
+1. Inicio
+
+// declaro las variables
+
+2. numero, i[0,n]
+3. contador,  i[0,n] <-- 0
+4. suma,  i[0,n] <-- 0
+
+//pido datos por teclado
+
+5. Escribir "Ingrese el numero"
+6. Leer numero 
+
+// proceso 
+
+7. Si numero < 2 entonces
+8. 	Escribir "Valor fuera de rango"
+
+9. De lo contrario 
+10. Haga_Hasta 
+11. 	contador <-- contador + 2
+12.	suma <-- suma + contador 
+13.	Escribir contador 
+
+14. Fin Haga_Hasta (contador < numero)
+15. Escribir "El valor total de la suma de pares es:" + suma
+
+16. Fin si
+17. Fin 

@@ -1,0 +1,55 @@
+------Algoritmo-------
+
+1. Inicio 
+2. Se ingresa el valor del primer ángulo 
+3. Se ingresa el valor del segundo ángulo
+4. Se ingresa el valor del tercer ángulo
+5. Si el ángulo 1, el ángulo 2 o el ángulo 3 es igual a 90, el triangulo sera Rectangulo
+6. Si el ángulo 1, el ángulo 2 o el ángulo 3 es mayor a 90 y menor a 180, el triangulo sera Obtusangulo
+7. Si el ángulo 1, el ángulo 2 y el ángulo 3 son menores a 90, el triangulo sera Acutangulo
+8. Se presenta en pantalla, el valor de triangulo
+9. Fin 
+
+------Miniespecificacion------
+
+1. Inicio
+
+// declaro variables
+
+2. angulo1, i[0,n]
+3. angulo2, i[0,n]
+4. angulo3, d[0,n]
+5. triangulo, x(10)[{a-z}, {A-B}, {BS}]
+
+// pido datos por teclado
+
+6. Escribir "Ingrese el primer ángulo"
+7. Lea angulo1
+
+8. Escribir "Ingrese el segundo ángulo"
+9. Lea angulo2
+
+10. Escribir "Ingrese el tercer ángulo"
+11. Lea angulo3
+
+// proceso
+
+12. Si (angulo1 = 90) OR (angulo2 = 90) OR (angulo3 = 90) entonces 
+13. 	triangulo = "Rectangulo"
+
+14. De lo contrario si (angulo1 > 90 AND angulo1 < 180) OR
+                       (angulo2 > 90 AND angulo2 < 180) OR
+                       (angulo3 > 90 AND angulo3 < 180)
+15.	triangulo = "Obtusangulo"
+
+16. De lo contrario si (angulo1 < 90 AND angulo2 < 90 AND angulo3 < 90)
+17. 	triangulo = "Acutángulo"
+
+18. Fin si
+19. Fin si 
+20. Fin si
+
+//salida
+
+21. Escribir "El tipo de triangulo es: " + triangulo 
+22. Fin 

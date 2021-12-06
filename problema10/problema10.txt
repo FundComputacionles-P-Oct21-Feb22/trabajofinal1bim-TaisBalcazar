@@ -1,0 +1,59 @@
+-------Algoritmo---------
+
+1. Inicio
+2. Abrimos un ciclo repetitivo para que el usuario tenga la posibilidad de poder subir los datos mas de una vez, hasta las que desee
+3. Se ingresa el dato que se quiere calcular
+4. Se le pregunta al usuario si desea ingresar otro datos, si la respuesta es si, vuelve al punto anterior, si la respuesta es no,
+   sigue al sigueinte paso
+5. De los numeros ingresados, se formara una lista, que nos ayudara a guardar todos los valores ingresados
+6. Dentro del rango de la lista, se realizara la suma de cada uno de los valores
+7. Para encontrar la media, a la suma previa, la dividiremos con el numero de datos ingresados
+8. Para encontrar la suma de las desviaciones, a cada valoe de la lista le restamos la media y lo elevamos al cuadrados, luego
+   sumamos todos los valores de las desviaciones
+9. Para calcular la varianza, a la suma de las desviaciones ya obtenidas la dividimos por la cantisas de datos ingresados
+10. Cerramos el ciclo
+11. Presentamos en pantalla el siguiente mensaje "El valor de la media es: " junto con el valor de la media calculada anteriormente
+12. Presentamos en pantalla el siguiente mensaje "El valor de la varianza final es :" junto con el valor de la varianza obtenida 
+13. Fin
+
+
+-------Miniespecificación-------
+
+1. Inicio
+
+// declaro las variables
+
+2. bandera = True
+3. num, d[0,n] <-- 0
+4. media, d[0,n] <-- 0
+5. suma, d[0,n] <-- 0
+6. sumdesviaciones, d[0,n] <-- 0
+7. varianza, d[0,n] <-- 0
+8. desviaciones, d[0,n] <-- 0
+9. lista = []
+10.cantval, i[0,n]= len(lista)
+
+// proceso
+
+11. Mientras(bandera)
+12.		Escribir ("Ingrese el dato para calcular: ")
+13.		Lea num
+14.		Escribir ("Desea ingresar otro dato Si - No: ")
+15.		Si (("Si") OR ("SI") OR ("si"))
+16.			Caso contrario
+17.				bandera <-- false
+18.				cantval <-- len(lista)
+19.				Para (num dentro del rango(len(lista)))
+20.					suma <-- suma + lista[num]
+21.				media <-- suma / cantval
+22.				Para (num dentro del rango(len(lista)))
+23.					sumadesviaciones <-- sumdesviaciones + ((lista[num] - media) **2)
+24.				varianza <-- sumdesviaciones / cantval
+25. Fin Mientras
+
+// salida
+
+26. Escribir "El valor de la media es: " + media
+27. Escribir "El valor de varianza final es: " + varianza
+28. Fin
+

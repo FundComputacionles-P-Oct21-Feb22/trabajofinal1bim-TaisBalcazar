@@ -1,0 +1,66 @@
+--------Algoritmo----------
+
+1. Inicio
+
+2. Se ingresa el valor de x
+3. Se ingresa el valor de y
+4. Se declara una variable llamada "Cuadrante", que nos servira para almacenar los datos
+5. Si x es igual a 0 O y es igual a cero, guardamos en la variable cuadrante que el valor 
+   se encuentra en el eje de coordenadas
+6. Si x es mayor a 0 Y y mayor a cero, guardamos en la variable cuadrante que el valor
+   se encuentra en el primer cuadrante
+7. Si x es menor a 0 Y y mayor a cero, guardamos en la variable cuadrante que el valor
+   se encuentra en el segundo cuadrante
+8. Si x es mayor a 0 Y y menor a cero, guardamos en la variable cuadrante que el valor
+   se encuentra en el tercer cuadrante
+9. Si x es menor a 0 Y y menor a cero, guardamos en la variable cuadrante que el valor
+   se encuentra en el cuarto cuadrante
+
+10.Se muestra en pantalla el valor de la variable "Cuadrante" 
+11.Fin 
+
+
+-----Miniespecificacion------
+
+1. Inicio
+
+//declaro variables
+
+2. x, i[0,n]
+3. y, i[0,n]
+4. cuadrante, x(100)[{a-z},{A-Z}] <-- " "
+
+// pido datos por teclado
+
+5.Escribir "Ingrese el valor de x"
+6.Leer x
+7.Escribir "Ingrese el valor de y"
+8.Leer y
+
+// proceso
+
+9. Si (x = 0) OR ( y = 0) entonces
+10.	cuadrante = "Eje de coordenadas"
+
+11. De lo contrario Si (x > 0) AND ( y > 0)
+12. 	cuadrante = "Primer cuadrante"
+
+13. De lo contrario Si (x < 0) AND ( y > 0)
+14.	cuadrante = "Segundo cuadrante"
+
+15. De lo contrario Si (x < 0) AND ( y < 0)
+16.	cuadrante = "Tercer cuadrante"
+
+17. De lo contrario Si (x > 0) AND ( y < 0)
+18.	cuadrante = "Cuaro cuadrante"
+
+19. Fin si
+20. Fin si
+21. Fin si
+22. Fin si
+23. Fin si 
+
+// salida
+
+24. Escribir "Las coordenadas estan ubicadas en el " + cuadrante
+25. Fin 

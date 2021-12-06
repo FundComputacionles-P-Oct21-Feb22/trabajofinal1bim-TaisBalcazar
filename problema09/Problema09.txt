@@ -1,0 +1,35 @@
+------Miniespecificacion------
+
+1. Inicio
+
+// declaro las variables
+
+2. signo, x(1)[{-, +}] 
+3. signo1, x(1)[{-}] <-- " - "
+4. signo2, x(1)[{+}] <-- " + "
+5. cadena, x(100)[{0-50},{-,+, BS, /}] <-- " "
+6. numero1, i[0,n]
+7. numero2, i[0,n]
+8. limite1, i[0,n]
+9. limite2, i[0,n]
+
+// proceso
+
+10. Haga_Hasta
+
+11. Si (numero MOD 12 = O) entonces 
+12.	signo = signo2
+ 
+13. De lo contrario Si (numero2 = 11) OR (numero2 MOD 11 = 0)
+14. 	signo = signo1
+15. Fin si
+16. Escribir cadena <-- cadena + signo2 + numero1 + signo1 + numero2
+17. numero <-- numero1 + 12
+18. numero <-- numero2 + 11
+
+19. Fin Haga_Hasta (numero2 <= limite2) OR (numero1 <= limite1)
+
+// salida 
+
+20. Escribir cadena 
+21. Fin

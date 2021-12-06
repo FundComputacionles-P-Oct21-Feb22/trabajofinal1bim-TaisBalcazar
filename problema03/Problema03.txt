@@ -1,0 +1,82 @@
+-----Miniespecificacion----
+
+1. Inicio
+
+// declaro las variables
+
+2. tipo, x (100) [{A-Z},{a-z}, {BS}]
+3. nombre, x (100) [{A-Z},{a-z}, {BS}]
+4. cuotaporhora, d[0,n]
+5. horastrabajadas, i[0,n]
+6. pagoparcial, d[0,n]
+7. valorextra1, d[0,n] <-- 1,5
+8. valorextra2, d[0,n] <-- 2
+9. valorextra3, d[0,n] <-- 2,5
+10. valorextra4, d[0,n] <-- 3
+11. cuotaextra1, d[0,n]
+12. cuotaextra2, d[0,n]
+13. cuotaextra3, d[0,n]
+14. cuotaextra4, d[0,n]
+15. sueldo, d[0,n] <--0
+16. horasobligatorias, i[0,n] <-- 40
+17. horasextratrabajadas, i[0,n] 
+
+// pido datos por teclado
+
+18. Escribir "Ingrese nombre"
+19. Lea nombre
+
+20. Escribir "Ingrese tipo de empleado"
+21. Lea tipo
+
+22. Escribir "Ingrese las horas trabajadas"
+23. Lea horastrabajadas
+
+24. Escribir "Ingrese el valor de la cuota por hora"
+25. Lea cuotaporhora
+
+//proceso
+
+26. pagoparcial <-- (cuotaporhora * horastrabajadas)
+27. horasextratrabajadas <-- horastrabajadas - horasobligatorias)
+28. cuotaextra1 <-- (pagoparcial * valorextra1)
+29. cuotaextra2 <-- (pagoparcial * valorextra2)
+30. cuotaextra3 <-- (pagoparcial * valorextra3)
+31. cuotaextra4 <-- (pagoparcial * valorextra4)
+
+32. Escribir "Cálculo de sueldo" +\n + "Horas trabajadas:" + horastrabajadas +\n 
+    + "Cuota por hora:" +  cuotaporhora + \n + "Sueldo parcial: " + pagoparcial
+
+33. Si horastrabajadas < 40 entonces
+34.	Escribir "La cantidad de horas trabajadas no son suficientes para hacer pago de horas extra"
+35.	Escribir "El sueldo a pagar es: " + pagoparcial
+
+36. De lo contrario si tipo = tipo1
+37.	sueldo <-- pagoparcial + cuotaextra1
+38.	Escribir "Valor a pagar por horas extra: " + cuotaextra1
+
+39. De lo contrario si tipo = tipo2
+40.	sueldo <-- pagoparcial + cuotaextra2
+41.	Escribir "Valor a pagar por horas extra: " + cuotaextra2
+
+42. De lo contrario si tipo = tipo3
+43.	sueldo <-- pagoparcial + cuotaextra3
+44.	Escribir "Valor a pagar por horas extra: " + cuotaextra3
+
+45. De lo contrario si tipo = tipo4
+46.	sueldo <-- pagoparcial + cuotaextra4
+47.	Escribir "Valor a pagar por horas extra: " + cuotaextra4
+
+48. Fin si
+49. Fin si
+50. Fin si
+51. Fin si
+52. Fin si
+
+//salida
+
+53. Escribir "El sueldo a pagar es: " + sueldo
+54. Fin 
+
+
+                                                                      

@@ -1,0 +1,39 @@
+--------Algoritmo----------
+
+1. Inicio
+2. Se ingresa el primer numero
+3. Se ingresa el segundo numero
+4. Se ingresa el tercer numero
+5. Si el numero se repite en alguna de las variables, se presenta un mensaje de error diciendo
+   "No se puede ejecutar, por que los numeros tienen el mismo valor"
+6. De lo contrario, se ejecuta con normalidad el programa, sacando el maximo de los numeros presentados
+7. Se muestra en pantalla, "El numero mayor entre el primer numero, el segundo numero y el tercer numero es:
+   se presenta el valor maximo
+8. Fin
+
+-------Miniespecificacion-----
+
+1. Inicio
+// declaro las variables
+
+2. num1, i[0,n]
+3. num2, i[0,n]
+4. num3, i[0,n]
+
+// pido datos por teclado
+
+5. Escribir "Ingresar el número"
+6. Lea num1
+7. Escribir "Ingresar el número"
+8. Lea num2
+9. Escribir "Ingresar el número"
+10.Lea num3
+
+// proceso
+
+11. Si (num1 = num2) OR (num2 = num3) OR (num1 = num3) entonces 
+12. 	Escribir "No se puede ejecutar, por que los numeros tienen el mismo valor"
+
+13. De lo contrario 
+14. 	Escribir "El numero mayor entre" + num1 + num2 + "y" + num3 : max (num1 OR num2 OR num3)
+15. Fin 
