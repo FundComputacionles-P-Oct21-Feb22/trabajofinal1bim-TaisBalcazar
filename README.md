@@ -1,4 +1,5 @@
 # Trabajo Final del Primer Bimestre
+## Integrantes: Jostin Alvarada y Tais Balcázar 
 
 ## Actividades
 
